@@ -23,7 +23,7 @@ body{
 
 article{
   background-color: white;
-  height: 100vh;
+  padding-bottom: 80px;
 
   header{
     width: 100%;
@@ -32,7 +32,6 @@ article{
     padding: 20px 60px;
     margin-bottom: 60px;
   }
-
 }
 
 .form_section{
@@ -270,6 +269,10 @@ article{
       width: 80%;
     }
   }
+
+  .big_box_parent .empty_section{
+    width: 80%;
+  }
   
 }
 
@@ -299,6 +302,10 @@ article{
     .form_section{
       width: 80%;
     }
+  }
+
+  .big_box_parent .empty_section{
+    width: 60%;
   }
   
 }

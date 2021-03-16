@@ -7,8 +7,12 @@ const section = document.querySelector('#links');
 const empty_section = document.querySelector('#empty_section');
 
 function checkForLinks() {
-  if(JSON.parse(localStorage.getItem('links')).length > 0){
-    empty_section.style.display = 'none';
+  if(localStorage.getItem('links')){
+    if(JSON.parse(localStorage.getItem('links')).length > 0){
+      empty_section.style.display = 'none';
+    } else{
+      empty_section.style.display = 'block';
+    }
   } else{
     empty_section.style.display = 'block';
   }

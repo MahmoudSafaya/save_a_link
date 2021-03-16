@@ -17,7 +17,7 @@ body {
 
 article {
   background-color: white;
-  height: 100vh;
+  padding-bottom: 80px;
 }
 
 article header {
@@ -250,6 +250,9 @@ article header {
   .edit_overlay .form_section {
     width: 80%;
   }
+  .big_box_parent .empty_section {
+    width: 80%;
+  }
 }
 
 @media only screen and (min-width: 521px) and (max-width: 992px) {
@@ -270,6 +273,9 @@ article header {
   }
   .edit_overlay .form_section {
     width: 80%;
+  }
+  .big_box_parent .empty_section {
+    width: 60%;
   }
 }
 /*# sourceMappingURL=style.css.map */
