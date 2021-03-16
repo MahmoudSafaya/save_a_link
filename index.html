@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sava a Link</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+  <article class="container">
+    <header>
+      Hi!
+    </header>
+    <section class="form_section">
+      <form>
+        <label for="title">Link Title</label>
+        <input type="text" name="title" placeholder="Title" id="title">
+        <label for="link">Link Address</label>
+        <input type="url" name="link" placeholder="http://example.com" id="link">
+        <label>What's Content</label>
+        <select id="subject" name="subject">
+          <option value="web">web</option>
+          <option value="study">study</option>
+          <option value="gaming">gaming</option>
+          <option value="other">other</option>
+        </select>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </section>
+  </article>
+
+  <article class="big_box_parent container">
+    <h1>Links</h1>
+    <section class="links" id="links">
+      
+    </section>
+    <div class="empty_section" id="empty_section">
+      No links were added yet.
+    </div>
+  </article>
+
+  <div class="edit_overlay" id="edit_overlay">
+    <section class="form_section">
+      <form>
+        <label for="title">Link Title</label>
+        <input type="text" name="title" placeholder="Title" id="edit_title">
+        <label for="link">Link Address</label>
+        <input type="url" name="link" placeholder="http://example.com" id="edit_link">
+        <label>What's Content</label>
+        <select id="edit_subject" name="subject" class="subject">
+          <option value="web">web</option>
+          <option value="study">study</option>
+          <option value="gaming">gaming</option>
+          <option value="other">other</option>
+        </select>
+        <button type="submit" id="edit_submit">Done</button>
+      </form>
+      <button class="cancel" id="cancel">Cancel</button>
+    </section>
+  </div>
+  
+  <script src="https://kit.fontawesome.com/951a4a044c.js" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
